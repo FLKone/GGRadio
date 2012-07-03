@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017FB5DA14134FA800DCBA95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB5D914134FA800DCBA95 /* UIKit.framework */; };
+		017FB5DC14134FA800DCBA95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB5DB14134FA800DCBA95 /* Foundation.framework */; };
+		017FB5DE14134FA800DCBA95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB5DD14134FA800DCBA95 /* CoreGraphics.framework */; };
+		017FB5E414134FA800DCBA95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 017FB5E214134FA800DCBA95 /* InfoPlist.strings */; };
+		017FB5E614134FA800DCBA95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB5E514134FA800DCBA95 /* main.m */; };
+		017FB5EA14134FA800DCBA95 /* ggAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB5E914134FA800DCBA95 /* ggAppDelegate.m */; };
+		017FB5ED14134FA800DCBA95 /* ggMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB5EC14134FA800DCBA95 /* ggMasterViewController.m */; };
+		017FB5F014134FA800DCBA95 /* ggDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB5EF14134FA800DCBA95 /* ggDetailViewController.m */; };
+		017FB5F314134FA800DCBA95 /* ggMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017FB5F114134FA800DCBA95 /* ggMasterViewController.xib */; };
+		017FB5F614134FA800DCBA95 /* ggDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017FB5F414134FA800DCBA95 /* ggDetailViewController.xib */; };
+		017FB6121413509A00DCBA95 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB5FD1413509A00DCBA95 /* ASIAuthenticationDialog.m */; };
+		017FB6131413509A00DCBA95 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB6001413509A00DCBA95 /* ASIDataCompressor.m */; };
+		017FB6141413509A00DCBA95 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB6021413509A00DCBA95 /* ASIDataDecompressor.m */; };
+		017FB6151413509A00DCBA95 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB6041413509A00DCBA95 /* ASIDownloadCache.m */; };
+		017FB6161413509A00DCBA95 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB6061413509A00DCBA95 /* ASIFormDataRequest.m */; };
+		017FB6171413509A00DCBA95 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB6081413509A00DCBA95 /* ASIHTTPRequest.m */; };
+		017FB6181413509A00DCBA95 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB60C1413509A00DCBA95 /* ASIInputStream.m */; };
+		017FB6191413509A00DCBA95 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB60E1413509A00DCBA95 /* ASINetworkQueue.m */; };
+		017FB61A1413509A00DCBA95 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB6111413509A00DCBA95 /* Reachability.m */; };
+		017FB61D1413526F00DCBA95 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB61C1413526F00DCBA95 /* CFNetwork.framework */; };
+		017FB61F1413528A00DCBA95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB61E1413528A00DCBA95 /* SystemConfiguration.framework */; };
+		017FB621141352A600DCBA95 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB620141352A600DCBA95 /* MobileCoreServices.framework */; };
+		017FB623141352B400DCBA95 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB622141352B400DCBA95 /* libz.dylib */; };
+		017FB64B14135FB900DCBA95 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB64A14135FB900DCBA95 /* libxml2.dylib */; };
+		017FB6A2141384D600DCBA95 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB6A1141384D600DCBA95 /* RegexKitLite.m */; };
+		017FB6A91413899900DCBA95 /* TopicCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB6A71413899900DCBA95 /* TopicCellView.m */; };
+		017FB6AA1413899900DCBA95 /* TopicCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017FB6A81413899900DCBA95 /* TopicCellView.xib */; };
+		017FB6AF14138D6B00DCBA95 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB6AC14138D6B00DCBA95 /* AudioToolbox.framework */; };
+		017FB6B114138D6B00DCBA95 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB6AE14138D6B00DCBA95 /* CoreAudio.framework */; };
+		017FB6CD1413BFE800DCBA95 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB6CC1413BFE800DCBA95 /* AudioStreamer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		017FB5D514134FA800DCBA95 /* gegeradio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gegeradio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		017FB5D914134FA800DCBA95 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		017FB5DB14134FA800DCBA95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		017FB5DD14134FA800DCBA95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		017FB5E114134FA800DCBA95 /* gegeradio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gegeradio-Info.plist"; sourceTree = "<group>"; };
+		017FB5E314134FA800DCBA95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		017FB5E514134FA800DCBA95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		017FB5E714134FA800DCBA95 /* gegeradio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gegeradio-Prefix.pch"; sourceTree = "<group>"; };
+		017FB5E814134FA800DCBA95 /* ggAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ggAppDelegate.h; sourceTree = "<group>"; };
+		017FB5E914134FA800DCBA95 /* ggAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ggAppDelegate.m; sourceTree = "<group>"; };
+		017FB5EB14134FA800DCBA95 /* ggMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ggMasterViewController.h; sourceTree = "<group>"; };
+		017FB5EC14134FA800DCBA95 /* ggMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ggMasterViewController.m; sourceTree = "<group>"; };
+		017FB5EE14134FA800DCBA95 /* ggDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ggDetailViewController.h; sourceTree = "<group>"; };
+		017FB5EF14134FA800DCBA95 /* ggDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ggDetailViewController.m; sourceTree = "<group>"; };
+		017FB5F214134FA800DCBA95 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ggMasterViewController.xib; sourceTree = "<group>"; };
+		017FB5F514134FA800DCBA95 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ggDetailViewController.xib; sourceTree = "<group>"; };
+		017FB5FC1413509A00DCBA95 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		017FB5FD1413509A00DCBA95 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		017FB5FE1413509A00DCBA95 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		017FB5FF1413509A00DCBA95 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		017FB6001413509A00DCBA95 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		017FB6011413509A00DCBA95 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		017FB6021413509A00DCBA95 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		017FB6031413509A00DCBA95 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		017FB6041413509A00DCBA95 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		017FB6051413509A00DCBA95 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		017FB6061413509A00DCBA95 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		017FB6071413509A00DCBA95 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		017FB6081413509A00DCBA95 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		017FB6091413509A00DCBA95 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		017FB60A1413509A00DCBA95 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		017FB60B1413509A00DCBA95 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		017FB60C1413509A00DCBA95 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		017FB60D1413509A00DCBA95 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		017FB60E1413509A00DCBA95 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		017FB60F1413509A00DCBA95 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		017FB6101413509A00DCBA95 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		017FB6111413509A00DCBA95 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		017FB61C1413526F00DCBA95 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		017FB61E1413528A00DCBA95 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		017FB620141352A600DCBA95 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		017FB622141352B400DCBA95 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		017FB64A14135FB900DCBA95 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		017FB6A0141384D600DCBA95 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		017FB6A1141384D600DCBA95 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		017FB6A61413899900DCBA95 /* TopicCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicCellView.h; sourceTree = "<group>"; };
+		017FB6A71413899900DCBA95 /* TopicCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicCellView.m; sourceTree = "<group>"; };
+		017FB6A81413899900DCBA95 /* TopicCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCellView.xib; sourceTree = "<group>"; };
+		017FB6AC14138D6B00DCBA95 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		017FB6AE14138D6B00DCBA95 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		017FB6B914138ED500DCBA95 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		017FB6CB1413BFE800DCBA95 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		017FB6CC1413BFE800DCBA95 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		017FB5D214134FA800DCBA95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017FB6AF14138D6B00DCBA95 /* AudioToolbox.framework in Frameworks */,
+				017FB6B114138D6B00DCBA95 /* CoreAudio.framework in Frameworks */,
+				017FB64B14135FB900DCBA95 /* libxml2.dylib in Frameworks */,
+				017FB623141352B400DCBA95 /* libz.dylib in Frameworks */,
+				017FB621141352A600DCBA95 /* MobileCoreServices.framework in Frameworks */,
+				017FB5DE14134FA800DCBA95 /* CoreGraphics.framework in Frameworks */,
+				017FB61F1413528A00DCBA95 /* SystemConfiguration.framework in Frameworks */,
+				017FB61D1413526F00DCBA95 /* CFNetwork.framework in Frameworks */,
+				017FB5DA14134FA800DCBA95 /* UIKit.framework in Frameworks */,
+				017FB5DC14134FA800DCBA95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		017FB5CA14134FA800DCBA95 = {
+			isa = PBXGroup;
+			children = (
+				017FB5DF14134FA800DCBA95 /* gegeradio */,
+				017FB5D814134FA800DCBA95 /* Frameworks */,
+				017FB5D614134FA800DCBA95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		017FB5D614134FA800DCBA95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				017FB5D514134FA800DCBA95 /* gegeradio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		017FB5D814134FA800DCBA95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				017FB6B914138ED500DCBA95 /* AudioUnit.framework */,
+				017FB6AC14138D6B00DCBA95 /* AudioToolbox.framework */,
+				017FB6AE14138D6B00DCBA95 /* CoreAudio.framework */,
+				017FB64A14135FB900DCBA95 /* libxml2.dylib */,
+				017FB622141352B400DCBA95 /* libz.dylib */,
+				017FB620141352A600DCBA95 /* MobileCoreServices.framework */,
+				017FB61E1413528A00DCBA95 /* SystemConfiguration.framework */,
+				017FB61C1413526F00DCBA95 /* CFNetwork.framework */,
+				017FB5D914134FA800DCBA95 /* UIKit.framework */,
+				017FB5DB14134FA800DCBA95 /* Foundation.framework */,
+				017FB5DD14134FA800DCBA95 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		017FB5DF14134FA800DCBA95 /* gegeradio */ = {
+			isa = PBXGroup;
+			children = (
+				017FB5E814134FA800DCBA95 /* ggAppDelegate.h */,
+				017FB5E914134FA800DCBA95 /* ggAppDelegate.m */,
+				017FB5EB14134FA800DCBA95 /* ggMasterViewController.h */,
+				017FB5EC14134FA800DCBA95 /* ggMasterViewController.m */,
+				017FB6AB141389A900DCBA95 /* New Group */,
+				017FB5EE14134FA800DCBA95 /* ggDetailViewController.h */,
+				017FB5EF14134FA800DCBA95 /* ggDetailViewController.m */,
+				017FB5F114134FA800DCBA95 /* ggMasterViewController.xib */,
+				017FB5F414134FA800DCBA95 /* ggDetailViewController.xib */,
+				017FB5E014134FA800DCBA95 /* Supporting Files */,
+			);
+			path = gegeradio;
+			sourceTree = "<group>";
+		};
+		017FB5E014134FA800DCBA95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				017FB6CB1413BFE800DCBA95 /* AudioStreamer.h */,
+				017FB6CC1413BFE800DCBA95 /* AudioStreamer.m */,
+				017FB61B141350A000DCBA95 /* HTTP */,
+				017FB62F1413556D00DCBA95 /* XML-NSD */,
+				017FB5E114134FA800DCBA95 /* gegeradio-Info.plist */,
+				017FB5E214134FA800DCBA95 /* InfoPlist.strings */,
+				017FB5E514134FA800DCBA95 /* main.m */,
+				017FB5E714134FA800DCBA95 /* gegeradio-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		017FB61B141350A000DCBA95 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				017FB5FC1413509A00DCBA95 /* ASIAuthenticationDialog.h */,
+				017FB5FD1413509A00DCBA95 /* ASIAuthenticationDialog.m */,
+				017FB5FE1413509A00DCBA95 /* ASICacheDelegate.h */,
+				017FB5FF1413509A00DCBA95 /* ASIDataCompressor.h */,
+				017FB6001413509A00DCBA95 /* ASIDataCompressor.m */,
+				017FB6011413509A00DCBA95 /* ASIDataDecompressor.h */,
+				017FB6021413509A00DCBA95 /* ASIDataDecompressor.m */,
+				017FB6031413509A00DCBA95 /* ASIDownloadCache.h */,
+				017FB6041413509A00DCBA95 /* ASIDownloadCache.m */,
+				017FB6051413509A00DCBA95 /* ASIFormDataRequest.h */,
+				017FB6061413509A00DCBA95 /* ASIFormDataRequest.m */,
+				017FB6071413509A00DCBA95 /* ASIHTTPRequest.h */,
+				017FB6081413509A00DCBA95 /* ASIHTTPRequest.m */,
+				017FB6091413509A00DCBA95 /* ASIHTTPRequestConfig.h */,
+				017FB60A1413509A00DCBA95 /* ASIHTTPRequestDelegate.h */,
+				017FB60B1413509A00DCBA95 /* ASIInputStream.h */,
+				017FB60C1413509A00DCBA95 /* ASIInputStream.m */,
+				017FB60D1413509A00DCBA95 /* ASINetworkQueue.h */,
+				017FB60E1413509A00DCBA95 /* ASINetworkQueue.m */,
+				017FB60F1413509A00DCBA95 /* ASIProgressDelegate.h */,
+				017FB6101413509A00DCBA95 /* Reachability.h */,
+				017FB6111413509A00DCBA95 /* Reachability.m */,
+			);
+			name = HTTP;
+			sourceTree = "<group>";
+		};
+		017FB62F1413556D00DCBA95 /* XML-NSD */ = {
+			isa = PBXGroup;
+			children = (
+				017FB6A0141384D600DCBA95 /* RegexKitLite.h */,
+				017FB6A1141384D600DCBA95 /* RegexKitLite.m */,
+			);
+			name = "XML-NSD";
+			sourceTree = "<group>";
+		};
+		017FB6AB141389A900DCBA95 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				017FB6A61413899900DCBA95 /* TopicCellView.h */,
+				017FB6A71413899900DCBA95 /* TopicCellView.m */,
+				017FB6A81413899900DCBA95 /* TopicCellView.xib */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		017FB5D414134FA800DCBA95 /* gegeradio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 017FB5F914134FA800DCBA95 /* Build configuration list for PBXNativeTarget "gegeradio" */;
+			buildPhases = (
+				017FB5D114134FA800DCBA95 /* Sources */,
+				017FB5D214134FA800DCBA95 /* Frameworks */,
+				017FB5D314134FA800DCBA95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gegeradio;
+			productName = gegeradio;
+			productReference = 017FB5D514134FA800DCBA95 /* gegeradio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		017FB5CC14134FA800DCBA95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 017FB5CF14134FA800DCBA95 /* Build configuration list for PBXProject "gegeradio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 017FB5CA14134FA800DCBA95;
+			productRefGroup = 017FB5D614134FA800DCBA95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				017FB5D414134FA800DCBA95 /* gegeradio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		017FB5D314134FA800DCBA95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017FB5E414134FA800DCBA95 /* InfoPlist.strings in Resources */,
+				017FB5F314134FA800DCBA95 /* ggMasterViewController.xib in Resources */,
+				017FB5F614134FA800DCBA95 /* ggDetailViewController.xib in Resources */,
+				017FB6AA1413899900DCBA95 /* TopicCellView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		017FB5D114134FA800DCBA95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017FB5E614134FA800DCBA95 /* main.m in Sources */,
+				017FB5EA14134FA800DCBA95 /* ggAppDelegate.m in Sources */,
+				017FB5ED14134FA800DCBA95 /* ggMasterViewController.m in Sources */,
+				017FB5F014134FA800DCBA95 /* ggDetailViewController.m in Sources */,
+				017FB6121413509A00DCBA95 /* ASIAuthenticationDialog.m in Sources */,
+				017FB6131413509A00DCBA95 /* ASIDataCompressor.m in Sources */,
+				017FB6141413509A00DCBA95 /* ASIDataDecompressor.m in Sources */,
+				017FB6151413509A00DCBA95 /* ASIDownloadCache.m in Sources */,
+				017FB6161413509A00DCBA95 /* ASIFormDataRequest.m in Sources */,
+				017FB6171413509A00DCBA95 /* ASIHTTPRequest.m in Sources */,
+				017FB6181413509A00DCBA95 /* ASIInputStream.m in Sources */,
+				017FB6191413509A00DCBA95 /* ASINetworkQueue.m in Sources */,
+				017FB61A1413509A00DCBA95 /* Reachability.m in Sources */,
+				017FB6A2141384D600DCBA95 /* RegexKitLite.m in Sources */,
+				017FB6A91413899900DCBA95 /* TopicCellView.m in Sources */,
+				017FB6CD1413BFE800DCBA95 /* AudioStreamer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		017FB5E214134FA800DCBA95 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				017FB5E314134FA800DCBA95 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		017FB5F114134FA800DCBA95 /* ggMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				017FB5F214134FA800DCBA95 /* en */,
+			);
+			name = ggMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		017FB5F414134FA800DCBA95 /* ggDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				017FB5F514134FA800DCBA95 /* en */,
+			);
+			name = ggDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		017FB5F714134FA800DCBA95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		017FB5F814134FA800DCBA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		017FB5FA14134FA800DCBA95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gegeradio/gegeradio-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				INFOPLIST_FILE = "gegeradio/gegeradio-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-licucore",
+					"-lxml2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		017FB5FB14134FA800DCBA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gegeradio/gegeradio-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				INFOPLIST_FILE = "gegeradio/gegeradio-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-licucore",
+					"-lxml2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		017FB5CF14134FA800DCBA95 /* Build configuration list for PBXProject "gegeradio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017FB5F714134FA800DCBA95 /* Debug */,
+				017FB5F814134FA800DCBA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		017FB5F914134FA800DCBA95 /* Build configuration list for PBXNativeTarget "gegeradio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017FB5FA14134FA800DCBA95 /* Debug */,
+				017FB5FB14134FA800DCBA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 017FB5CC14134FA800DCBA95 /* Project object */;
+}
