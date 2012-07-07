@@ -55,7 +55,7 @@
 - (void)fetchContent
 {
 	
-	[self setRequest:[ASIHTTPRequest requestWithURL:[NSURL URLWithString:@"http://ggradio.online.fr/oezjno.xml"]]];
+	[self setRequest:[ASIHTTPRequest requestWithURL:[NSURL URLWithString:@"http://www.gerarddesuresnes.fr/wp-content/fmp-jw-files/playlists/fmp_jw_widget_playlist.xml"]]];
 	[request setDelegate:self];
 	
 	[request setDidStartSelector:@selector(fetchContentStarted:)];
@@ -79,9 +79,23 @@
 */
     
     self.arrayData = (NSMutableArray *)[[theRequest responseString] 
-                    arrayOfCaptureComponentsMatchedByRegex:@"<track><title>([^<]+)</title><location>([^<]+)</location><info>([^<]+)</info></track>"];
+                    arrayOfCaptureComponentsMatchedByRegex:@"<track>[^<]+<annotation>([^<]*)</annotation>[^<]+<location>([^<]*)</location>[^<]+<info>([^<]*)</info>[^<]+<image></image>[^<]+</track>"];
+    
+    
+    NSLog(@"%d", arrayData.count);
+    if (arrayData.count > 0) {
+        NSLog(@"%@", [arrayData objectAtIndex:0]);
+    }    
+    
     /* 
     
+     <track>
+     <annotation>Les Débats de Gérard - 19970000 Débat sur la Fidelité</annotation>
+     <location>http://gerarddesuresnes.fr/wp-content/uploads/2012/06/19970000_Debat_sur_la_fidelite.mp3</location>
+     <info>http://gerarddesuresnes.fr/19970000-debat-sur-la-fidelite/</info>
+     <image></image>
+     </track>
+     
     [doc release];
  */
     /*
@@ -197,7 +211,13 @@
         self.tmpCell = nil;		
 	}
     
-    [cell.titleLabel setText:[[arrayData objectAtIndex:indexPath.row] objectAtIndex:1]];
+    NSData *dat = [[[arrayData objectAtIndex:indexPath.row] objectAtIndex:1] dataUsingEncoding:NSISOLatin1StringEncoding];
+
+    
+    NSString *content = [[NSString alloc]  initWithBytes:[dat bytes]
+                                                  length:[dat length] encoding: NSUTF8StringEncoding];
+    
+    [cell.titleLabel setText:content];
 
     return cell;
 }
@@ -313,7 +333,7 @@
     
     [self setCurURL:[[arrayData objectAtIndex:indexPath.row] objectAtIndex:2]];
     
-    //NSLog(@"SELECTED URL %@", [[arrayData objectAtIndex:indexPath.row] objectAtIndex:2]);
+    NSLog(@"SELECTED URL %@", [[arrayData objectAtIndex:indexPath.row] objectAtIndex:2]);
     
     [self createStreamer];
     [streamer start];

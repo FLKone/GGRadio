@@ -36,7 +36,7 @@
 		017FB6AA1413899900DCBA95 /* TopicCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017FB6A81413899900DCBA95 /* TopicCellView.xib */; };
 		017FB6AF14138D6B00DCBA95 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB6AC14138D6B00DCBA95 /* AudioToolbox.framework */; };
 		017FB6B114138D6B00DCBA95 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017FB6AE14138D6B00DCBA95 /* CoreAudio.framework */; };
-		017FB6CD1413BFE800DCBA95 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FB6CC1413BFE800DCBA95 /* AudioStreamer.m */; };
+		CA10706915A38DFA002E6C19 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = CA10706715A38DFA002E6C19 /* AudioStreamer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,8 +91,8 @@
 		017FB6AC14138D6B00DCBA95 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		017FB6AE14138D6B00DCBA95 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		017FB6B914138ED500DCBA95 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
-		017FB6CB1413BFE800DCBA95 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
-		017FB6CC1413BFE800DCBA95 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		CA10706715A38DFA002E6C19 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		CA10706815A38DFA002E6C19 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,8 +171,8 @@
 		017FB5E014134FA800DCBA95 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				017FB6CB1413BFE800DCBA95 /* AudioStreamer.h */,
-				017FB6CC1413BFE800DCBA95 /* AudioStreamer.m */,
+				CA10706715A38DFA002E6C19 /* AudioStreamer.m */,
+				CA10706815A38DFA002E6C19 /* AudioStreamer.h */,
 				017FB61B141350A000DCBA95 /* HTTP */,
 				017FB62F1413556D00DCBA95 /* XML-NSD */,
 				017FB5E114134FA800DCBA95 /* gegeradio-Info.plist */,
@@ -310,7 +310,7 @@
 				017FB61A1413509A00DCBA95 /* Reachability.m in Sources */,
 				017FB6A2141384D600DCBA95 /* RegexKitLite.m in Sources */,
 				017FB6A91413899900DCBA95 /* TopicCellView.m in Sources */,
-				017FB6CD1413BFE800DCBA95 /* AudioStreamer.m in Sources */,
+				CA10706915A38DFA002E6C19 /* AudioStreamer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +444,7 @@
 				017FB5FB14134FA800DCBA95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
